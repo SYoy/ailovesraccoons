@@ -24,6 +24,7 @@
 
   gtag('config', 'G-0B4REPVJEG');
 </script>
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
 </head>
 
 <body>
@@ -111,7 +112,6 @@
 todo:
     - scrolling mobile
 	- find good pictures
-	- add projects
 	- deploy
 -->
 
@@ -198,6 +198,22 @@ todo:
 <!--JQuery!-->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 <script src="js/popout_slider.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
+<script>
+window.cookieconsent.initialise({
+  "palette": {
+    "popup": {
+      "background": "#252e39"
+    },
+    "button": {
+      "background": "transparent",
+      "text": "#3193e4",
+      "border": "#3C14D0"
+    }
+  },
+  "position": "bottom-left"
+});
+</script>
 
 </body>
 </html>

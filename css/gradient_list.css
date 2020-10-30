@@ -161,7 +161,6 @@ ol.gradient-list-2 > li + li {
   margin-top: 2rem;
 }
 
-
 ol.gradient-list-3 {
   counter-reset: gradient-counter;
   list-style: none;
@@ -233,8 +232,17 @@ ol.gradient-list-3 > li + li {
   margin-top: 2rem;
 }
 
-@media screen and (max-width: 64em) and (orientation : portrait) {
-ol.gradient-list, ol.gradient-list-2,ol.gradient-list-3 {
+ol.gradient-list, ol.gradient-list-2, ol.gradient-list-3 {
+  font-size: 4vh;
+  max-width: 90%;
+}
+ol.gradient-list > li::before, ol.gradient-list-2 > li::before, ol.gradient-list-3 > li::before,
+ol.gradient-list > li::after,  ol.gradient-list-2 > li::after, ol.gradient-list-3 > li::after {
+  font-size: 4vh;
+}
+
+@media screen and (max-device-width: 64em) and (orientation : portrait) {
+ol.gradient-list, ol.gradient-list-2, ol.gradient-list-3 {
   font-size: 3vh;
 }
 ol.gradient-list > li + li, ol.gradient-list-2 > li + li, ol.gradient-list-3 > li + li {
