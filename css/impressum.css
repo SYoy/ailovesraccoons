@@ -221,24 +221,6 @@ circle {
   overflow: hidden;
 }
 
-@media screen and (max-width: 64em) and (orientation : portrait) {
-.slide1, .slide2, .slide3, .slide4 {
-  position: absolute;
-  background-position: center;
-  background-size: cover;
-  color: #fff;
-  font-size: 62px;
-  padding: auto;
-  font-weight: 800;
-  font-family: 'Heebo', sans-serif;
-  text-align: center;
-  width: 100%;
-  height: 100%;
-  z-index: 10;
-  transition: 1.4s;
-}
-}
-
 .slide1, .slide2, .slide3, .slide4 {
   position: absolute;
   background-position: center;
@@ -253,6 +235,22 @@ circle {
   height: 100%;
   z-index: 10;
   transition: 1.4s;
+}
+
+.slide2 p {
+  font-size: 3vh;
+}
+
+@media screen and (max-width: 64em) and (orientation : portrait) {
+.slide1 p, .slide2 p, .slide3 p {
+  font-size: 1.4vh;
+}
+}
+
+@media screen and (max-device-height: 64em) and (orientation : landscape) {
+.slide1 p, .slide2 p, .slide3 p {
+  font-size: 5vh;
+}
 }
 
 .tran {

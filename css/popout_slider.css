@@ -117,7 +117,7 @@ body {
   overflow: hidden;
 }
 
-@media screen and (max-width: 64em) {
+@media screen and (max-width: 64em) and (orientation : portrait) {
 .slider__inner {
   width: 100%;
   height: 100%;
@@ -140,11 +140,22 @@ body {
 }
 .slider__content {
   position: relative;
-  top: 50%;
+  top: 10%;
   width: auto;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
   color: white;
+  font-family: "Heebo", sans-serif;
+  opacity: 0;
+  -webkit-transition: opacity 450ms;
+  transition: opacity 450ms;
+}
+
+.slider__textblock {
+  position: relative;
+  margin: auto 0;
+  width: auto;
+  max-width: 80%;
+  color: white;
+  left: 0;
   font-family: "Heebo", sans-serif;
   opacity: 0;
   -webkit-transition: opacity 450ms;
