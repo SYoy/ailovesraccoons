@@ -234,14 +234,20 @@ ol.gradient-list-3 > li + li {
 }
 
 @media screen and (max-width: 64em) and (orientation : portrait) {
+ol.gradient-list, ol.gradient-list-2,ol.gradient-list-3 {
+  font-size: 3vh;
+}
+ol.gradient-list > li + li, ol.gradient-list-2 > li + li, ol.gradient-list-3 > li + li {
+  margin-top: 3rem;
+}
 ol.gradient-list > li::before, ol.gradient-list-2 > li::before, ol.gradient-list-3 > li::before,
 ol.gradient-list > li::after,  ol.gradient-list-2 > li::after, ol.gradient-list-3 > li::after {
-  height: 4rem;
-  left: -2rem;
+  height: 5rem;
+  left: -2.5rem;
   overflow: hidden;
   position: absolute;
   top: -2rem;
-  width: 4rem;
+  width: 5rem;
 }
 ol.gradient-list > li::before {
   align-items: flex-end;
@@ -273,4 +279,19 @@ ol.gradient-list-3 > li::before {
   padding: 0.125em 0.25em;
   z-index: 1;
   }
+}
+
+@media screen and (max-width: 64em) and (orientation : landscape) {
+ol.gradient-list, ol.gradient-list-2,ol.gradient-list-3 {
+  font-size: 2.5vw;
+}
+ol.gradient-list > li::before, ol.gradient-list-2 > li::before, ol.gradient-list-3 > li::before,
+ol.gradient-list > li::after,  ol.gradient-list-2 > li::after, ol.gradient-list-3 > li::after {
+  height: 3rem;
+  left: -1rem;
+  overflow: hidden;
+  position: absolute;
+  top: -1rem;
+  width: 3rem;
+}
 }
